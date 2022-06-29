@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../shared/component/components.dart';
+
 class DoneTasksScreen extends StatefulWidget {
   const DoneTasksScreen({Key? key}) : super(key: key);
   @override
@@ -8,6 +10,6 @@ class DoneTasksScreen extends StatefulWidget {
 class _DoneTasksScreenState extends State<DoneTasksScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Done Tasks Screen'));
+    return buildTasksItems();
   }
 }

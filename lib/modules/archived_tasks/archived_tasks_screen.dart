@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../shared/component/components.dart';
+
 class ArchivedTasksScreen extends StatefulWidget {
   const ArchivedTasksScreen({Key? key}) : super(key: key);
 
@@ -10,6 +12,6 @@ class ArchivedTasksScreen extends StatefulWidget {
 class _ArchivedTasksScreenState extends State<ArchivedTasksScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Archived Tasks Screen'));
+    return buildTasksItems();
   }
 }

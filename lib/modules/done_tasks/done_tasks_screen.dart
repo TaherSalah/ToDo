@@ -1,3 +1,4 @@
+import 'package:apptodo/shared/component/constants.dart';
 import 'package:flutter/material.dart';
 
 import '../../shared/component/components.dart';
@@ -10,6 +11,14 @@ class DoneTasksScreen extends StatefulWidget {
 class _DoneTasksScreenState extends State<DoneTasksScreen> {
   @override
   Widget build(BuildContext context) {
-    return buildTasksItems();
+    return ListView.separated(
+      itemBuilder:(context,index)=>buildTasksItems(tasks[index]) ,
+        separatorBuilder: (context,index)=>Container(
+          width: double.infinity,
+          height: 2.0,
+          color: Colors.grey[300],
+        ),
+        itemCount: tasks.length,
+    );
   }
 }

@@ -36,7 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   sqflite: ^2.0.2+1
   intl: ^0.17.0
-
+  bloc:
+  flutter_bloc:
 dev_dependencies:
   flutter_test:
     sdk: flutter

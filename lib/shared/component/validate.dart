@@ -15,8 +15,8 @@ class Validator {
   static String? password(String? value) {
     if (value!.isEmpty) {
       return 'Password Empty!';
-    } else if (value.length < 8) {
-      return 'Password must be at least 8 digit';
+    } else if (value.length < 6 ) {
+      return 'Password must be at least 6 digit';
     } else {
       return null;
     }

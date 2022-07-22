@@ -55,30 +55,30 @@ Widget defualtFormFieldTiming({
     ),
   ),
 );
-Widget buildTasksItems() =>Padding(
+Widget buildTasksItems(Map dataRespon) =>Padding(
   padding: const EdgeInsets.all(15.0),
   child: Row(
     children: [
-      const CircleAvatar(
-        radius: 45.0,
+       CircleAvatar(
+        radius: 40.0,
         backgroundColor: Colors.pinkAccent,
-        child: Text('02.05'),
+        child: Text('${dataRespon ['time']}'),
       ),
-      SizedBox(
+      const SizedBox(
         width: 10.0,
       ),
       Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Text(
-            'Task Title',
-            style: TextStyle(
+           Text(
+            '${dataRespon ['title']}',
+            style: const TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
                 fontWeight: FontWeight.bold),
           ),
           Text(
-            '01 , April , 2022',
+            '${dataRespon ['date']}',
             style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.grey[300],

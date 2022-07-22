@@ -12,6 +12,7 @@ Todo({
   required this.creationDate,
   required this.isCheched,
 });
+  // ignore: non_constant_identifier_names
   Map <String ,dynamic> ToMap(){
     return {
       'id':id,

@@ -88,6 +88,8 @@ Widget tasksBuilder({
               color: Colors.blueGrey,
               size: 30.0,
             ),
+            SizedBox(height: 10.0,),
+
             Text(
               'No Tasks Yet Please Add Some Tasks',
               style: TextStyle(
@@ -95,7 +97,17 @@ Widget tasksBuilder({
                 fontSize: 16.0,
                 color: Colors.blueGrey,
               ),
-            )
+            ),
+            SizedBox(height: 10.0,),
+            Text(
+              'Dev by Taher Salah',
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 16.0,
+                color: Colors.red,
+              ),
+            ),
+
           ],
         ),
       ),
